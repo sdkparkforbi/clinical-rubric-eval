@@ -4,12 +4,12 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Clinical Rubric Evaluation · MTS-Dialog Scoring</title>
-<meta name="description" content="MTS-Dialog 3-way LLM Scoring — 생성형 AI와 바이오컴퓨팅 6주차 실습"/>
+<meta name="description" content="MTS-Dialog 3-way LLM Scoring — 생성형 AI와 바이오컴퓨팅 · 차의과학대학교 AI헬스케어융합학과"/>
 
 <!-- Open Graph -->
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="Clinical Rubric Evaluation"/>
-<meta property="og:description" content="MTS-Dialog 3-way LLM Scoring — 생성형 AI와 바이오컴퓨팅 6주차"/>
+<meta property="og:description" content="MTS-Dialog 3-way LLM Scoring — 생성형 AI와 바이오컴퓨팅"/>
 <meta property="og:image" content="https://sdkparkforbi.github.io/clinical-rubric-eval/thumb.png"/>
 <meta property="og:url" content="https://sdkparkforbi.github.io/clinical-rubric-eval/"/>
 <meta property="og:site_name" content="차의과학대학교 AI헬스케어융합학과"/>
@@ -17,50 +17,1028 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Clinical Rubric Evaluation"/>
-<meta name="twitter:description" content="MTS-Dialog 3-way LLM Scoring — 6주차"/>
+<meta name="twitter:description" content="MTS-Dialog 3-way LLM Scoring"/>
 <meta name="twitter:image" content="https://sdkparkforbi.github.io/clinical-rubric-eval/thumb.png"/>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-  body {
-    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f5f4f0; color: #1a1916;
-    max-width: 720px; margin: 3rem auto; padding: 0 2rem;
-    line-height: 1.7;
-  }
-  h1 { font-weight: 500; letter-spacing: -0.5px; font-size: 28px; margin-bottom: 0.3rem; }
-  .subtitle { color: #7a7870; font-size: 15px; }
-  .card {
-    background: white; border: 1px solid #e2e0da; border-radius: 10px;
-    padding: 1.5rem; margin-top: 2rem;
-  }
-  .status { color: #1d4ed8; font-weight: 500; font-size: 14px; }
-  code {
-    background: #eff6ff; padding: 2px 6px; border-radius: 4px;
-    font-size: 13px; color: #1d4ed8;
-  }
-  img.hero { width: 100%; border-radius: 10px; margin-top: 1.5rem; }
+:root {
+  /* 블루톤 팔레트 (오늘 수업 자습서와 동일) */
+  --bg:            #F0F6FC;
+  --surface:       #FFFFFF;
+  --surface-hover: #F8FAFC;
+  --border:        #B3D4F0;
+  --border-soft:   #DBEAFE;
+  --text:          #0F172A;
+  --text-muted:    #475569;
+  --text-faint:    #94A3B8;
+
+  --primary:       #1976D2;
+  --primary-hover: #1565C0;
+  --primary-light: #E3F2FD;
+  --primary-dark:  #0D47A1;
+
+  --accent-blue:   #64B5F6;
+  --tip-bg:        #E3F2FD;
+  --ok-bg:         #BBDEFB;
+  --ok-border:     #1976D2;
+  --note-bg:       #F0F6FC;
+  --note-border:   #B3D4F0;
+  --warn-bg:       #FEF3C7;
+  --warn-text:     #92400E;
+  --error-bg:      #FEE2E2;
+  --error-text:    #991B1B;
+
+  --radius:    10px;
+  --radius-sm: 6px;
+  --radius-lg: 14px;
+  --shadow:    0 1px 3px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo',
+               'Malgun Gothic', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* =============== HEADER =============== */
+.site-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border-soft);
+}
+.site-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  letter-spacing: -0.3px;
+}
+.site-header .subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* =============== COMMON =============== */
+.screen { display: block; }
+.screen[hidden] { display: none; }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.card-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input[type=text], textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  outline: none;
+  width: 100%;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+input[type=text]:focus, textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--tip-bg);
+}
+textarea { resize: vertical; min-height: 70px; }
+
+/* =============== BUTTONS =============== */
+.btn {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-align: center;
+}
+.btn:hover { background: var(--surface-hover); border-color: var(--primary); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn:disabled:hover { background: var(--surface); border-color: var(--border); }
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--surface);
+  border-color: var(--primary);
+}
+.btn-primary:hover { background: var(--primary-hover); border-color: var(--primary-hover); }
+
+.btn-large { padding: 14px 24px; font-size: 15px; width: 100%; }
+
+.btn-row { display: flex; gap: 10px; margin-top: 1rem; }
+.btn-row .btn { flex: 1; }
+
+/* =============== LOGIN SCREEN =============== */
+.login-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 2rem;
+  box-shadow: var(--shadow-lg);
+}
+.login-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.3rem;
+}
+.login-card .intro {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+.login-card .field { margin-bottom: 1.25rem; }
+
+/* =============== SESSION LIST =============== */
+.reviewer-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--primary-dark);
+  background: var(--tip-bg);
+  padding: 4px 10px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+}
+.session-option {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.session-option:hover { border-color: var(--primary); background: var(--surface-hover); }
+.session-option.featured { border-color: var(--primary); background: var(--tip-bg); }
+.session-option h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+.session-option .desc { font-size: 13px; color: var(--text-muted); }
+.session-option .meta {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-top: 6px;
+  font-family: 'SF Mono', 'Consolas', monospace;
+}
+
+/* =============== PROGRESS =============== */
+.progress-wrap { margin-bottom: 1.25rem; }
+.progress-meta {
+  display: flex; justify-content: space-between;
+  font-size: 12px; color: var(--text-muted); margin-bottom: 6px;
+  font-weight: 500;
+}
+.progress-track {
+  height: 4px;
+  background: var(--border-soft);
+  border-radius: 99px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+/* =============== SCORING SCREEN =============== */
+.dialogue-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.dialogue-meta {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-bottom: 0.75rem;
+  font-family: 'SF Mono', 'Consolas', monospace;
+}
+.dialogue-text {
+  font-size: 14px;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  color: var(--text);
+  background: #FAFCFE;
+  padding: 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+}
+
+/* Collapsible (한국어 보기, 임상 노트) */
+details {
+  margin-top: 0.75rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  background: var(--note-bg);
+  overflow: hidden;
+}
+details summary {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--primary);
+  user-select: none;
+  list-style: none;
+}
+details summary::-webkit-details-marker { display: none; }
+details summary::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 10px;
+  transition: transform 0.2s;
+}
+details[open] summary::before { transform: rotate(90deg); }
+details summary:hover { background: var(--tip-bg); }
+details .details-body {
+  padding: 12px 14px 14px;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text);
+  white-space: pre-wrap;
+  border-top: 1px solid var(--border-soft);
+  background: var(--surface);
+}
+
+/* Key points box */
+.keypoints {
+  background: var(--tip-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  margin-top: 1rem;
+}
+.keypoints .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.keypoints ul { list-style: none; padding: 0; }
+.keypoints li {
+  font-size: 14px;
+  color: var(--text);
+  padding: 3px 0 3px 14px;
+  position: relative;
+}
+.keypoints li::before {
+  content: '•';
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+  font-weight: 600;
+}
+
+/* Rubric table */
+.rubric-box {
+  background: var(--note-bg);
+  border: 1px solid var(--note-border);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+}
+.rubric-box .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+.rubric-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.rubric-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+.rubric-table td:first-child {
+  width: 42px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  text-align: center;
+}
+.rubric-table tr:last-child td { border-bottom: none; }
+
+/* Score buttons */
+.score-select {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background: var(--surface);
+  border: 2px solid var(--primary);
+  border-radius: var(--radius);
+  text-align: center;
+}
+.score-select .prompt {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+.score-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.score-btn {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  width: 56px;
+  height: 56px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.score-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+.score-btn.selected {
+  background: var(--primary);
+  color: var(--surface);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--tip-bg);
+}
+
+/* =============== DONE SCREEN =============== */
+.done-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--tip-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+}
+.done-hero .check {
+  width: 60px; height: 60px;
+  margin: 0 auto 1rem;
+  background: var(--primary);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 28px;
+}
+.done-hero h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 4px;
+}
+.done-hero p { color: var(--text-muted); font-size: 14px; }
+
+.code-block {
+  background: #0F172A;
+  color: #E2E8F0;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  margin-top: 12px;
+  position: relative;
+  overflow-x: auto;
+}
+.copy-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 12px;
+  padding: 6px 12px;
+  background: #1E293B;
+  color: #CBD5E1;
+  border: 1px solid #334155;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: inherit;
+}
+.copy-btn:hover { background: #334155; color: white; }
+.copy-btn.copied { background: var(--primary); color: white; border-color: var(--primary); }
+
+/* =============== TOAST =============== */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--text);
+  color: var(--surface);
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  font-size: 14px;
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  animation: toast-in 0.25s ease;
+}
+#toast.error { background: var(--error-text); }
+#toast.success { background: var(--primary); }
+@keyframes toast-in {
+  from { opacity: 0; transform: translate(-50%, 10px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* =============== FOOTER =============== */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12px;
+  color: var(--text-faint);
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container { padding: 1rem 1rem 3rem; }
+  .login-card { padding: 1.75rem; }
+  .score-btn { width: 48px; height: 48px; font-size: 18px; }
+  .score-buttons { gap: 6px; }
+  .btn-row { flex-direction: column; }
+}
 </style>
 </head>
+
 <body>
+<div class="container">
 
-<h1>Clinical Rubric Evaluation</h1>
-<p class="subtitle">MTS-Dialog 3-way LLM Scoring · 생성형 AI와 바이오컴퓨팅 6주차</p>
+  <header class="site-header">
+    <h1>Clinical Rubric Evaluation</h1>
+    <p class="subtitle">MTS-Dialog 3-way LLM Scoring · 생성형 AI와 바이오컴퓨팅 · 차의과학대학교 AI헬스케어융합학과</p>
+  </header>
 
-<img src="thumb.png" alt="Clinical Rubric Evaluation" class="hero"/>
+  <!-- ============ SCREEN 1: LOGIN ============ -->
+  <section id="screen-login" class="screen">
+    <div class="login-card">
+      <h2>시작하기</h2>
+      <p class="intro">본인의 학번 또는 아이디를 입력해주십시오. 입력하신 아이디로 채점 결과가 저장됩니다.</p>
 
-<div class="card">
-  <p class="status">Step 1 완료 — 데이터 풀과 썸네일 배포됨</p>
-  <p style="margin-top: 1rem;">
-    현재 상태: <code>mts_pool.json</code> (30개 대화) 배포됨.
-    채점 UI는 Step 2에서 추가됩니다.
-  </p>
+      <div class="field">
+        <label for="input-reviewer">학번 / 아이디</label>
+        <input type="text" id="input-reviewer" placeholder="예: student01" autocomplete="off"/>
+      </div>
+
+      <button class="btn btn-primary btn-large" onclick="submitLogin()">입장하기</button>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 2: SESSION SELECT ============ -->
+  <section id="screen-sessions" class="screen" hidden>
+    <div class="card">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+        <span class="reviewer-tag" id="tag-reviewer"></span>
+        <button class="btn" style="font-size: 13px; padding: 6px 12px;" onclick="logout()">로그아웃</button>
+      </div>
+
+      <h2 style="font-size: 18px; font-weight: 600; color: var(--primary-dark); margin-bottom: 0.25rem;">세션 선택</h2>
+      <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 1.25rem;">
+        오늘 채점할 대화는 <strong>10개</strong>이며, 모든 학생이 동일한 세트를 채점합니다.
+      </p>
+
+      <div class="session-option featured" onclick="startNewSession()">
+        <h3>새 세션 시작하기</h3>
+        <p class="desc">처음부터 10개 대화를 순서대로 채점합니다. 약 20~30분 소요.</p>
+      </div>
+
+      <div id="existing-sessions"></div>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 3: SCORING ============ -->
+  <section id="screen-scoring" class="screen" hidden>
+    <div class="progress-wrap">
+      <div class="progress-meta">
+        <span id="progress-label">진행률</span>
+        <span id="progress-count">0 / 10</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <div class="card-title" id="rubric-name"></div>
+
+    <div class="dialogue-card">
+      <div class="dialogue-meta" id="dialogue-meta"></div>
+      <div class="dialogue-text" id="dialogue-text"></div>
+
+      <details>
+        <summary>한국어 번역 보기</summary>
+        <div class="details-body" id="dialogue-ko"></div>
+      </details>
+
+      <details>
+        <summary>임상 노트 (SOAP) 보기</summary>
+        <div class="details-body" id="note-content"></div>
+      </details>
+
+      <div class="keypoints">
+        <div class="label">채점 시 주목할 포인트</div>
+        <ul id="keypoints-list"></ul>
+      </div>
+
+      <div class="rubric-box">
+        <div class="label">루브릭: <span id="rubric-display-name"></span></div>
+        <table class="rubric-table" id="rubric-table"></table>
+      </div>
+    </div>
+
+    <div class="score-select">
+      <div class="prompt">점수를 선택해주십시오</div>
+      <div class="score-buttons" id="score-buttons"></div>
+    </div>
+
+    <div class="card">
+      <label for="input-comment">채점 이유 (선택 사항)</label>
+      <textarea id="input-comment" placeholder="간단한 채점 이유를 남기실 수 있습니다."></textarea>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn" id="btn-prev" onclick="goPrev()">← 이전</button>
+      <button class="btn btn-primary" id="btn-next" onclick="saveAndNext()">저장하고 다음 →</button>
+    </div>
+  </section>
+
+  <!-- ============ SCREEN 4: DONE ============ -->
+  <section id="screen-done" class="screen" hidden>
+    <div class="done-hero">
+      <div class="check">✓</div>
+      <h2>채점 완료</h2>
+      <p>수고하셨습니다. 10개 대화의 채점 결과가 저장되었습니다.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Colab에서 세션 불러오기</div>
+      <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 12px;">
+        Colab 노트북에서 본인의 채점 결과를 불러오려면, 아래 코드 한 줄을 복사하여 붙여넣어 주십시오.
+      </p>
+
+      <div class="code-block" id="colab-code">
+        <button class="copy-btn" onclick="copyCode()">복사</button>
+        <span id="colab-code-text"></span>
+      </div>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn" onclick="goBackToSessions()">세션 선택으로</button>
+      <button class="btn" onclick="logout()">로그아웃</button>
+    </div>
+  </section>
+
+  <div class="footer">
+    차의과학대학교 일반대학원 AI헬스케어융합학과<br/>
+    박대근 교수 · 생성형 AI와 바이오컴퓨팅 (A004174)
+  </div>
+
 </div>
 
-<div class="card">
-  <h3 style="font-weight: 500; margin-bottom: 0.5rem;">차의과학대학교 일반대학원 AI헬스케어융합학과</h3>
-  <p style="font-size: 14px; color: #555;">박대근 교수 · 생성형 AI와 바이오컴퓨팅 (A004174)</p>
-</div>
+<!-- Toast notification -->
+<div id="toast" hidden></div>
+
+<script>
+// ============================================================
+// Clinical Rubric Evaluation — Student Web UI
+// 단일 HTML 파일 구조 (외부 의존 없음)
+// ============================================================
+
+// --- 설정 ---
+const POOL_URL = './mts_pool.json';
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbwk1hQoOe6k_xFvf_JP2z8Z2MR7N51B2E9p0AtNLqyuxLPm81nOpwOt1pmYSzn-HLAu/exec';
+const LS_KEY_REVIEWER = 'cre_reviewer';
+const LS_KEY_SESSION_PREFIX = 'cre_session_';
+
+// --- 상태 ---
+let state = {
+  reviewer_id: null,
+  pool: null,            // mts_pool.json 전체
+  rubric: null,          // pool.rubric
+  dialogues: [],         // selected_ids에 해당하는 10개 대화 (pool_id 순)
+  session: null,         // { start_timestamp, scores[10], comments[10], current_index }
+};
+
+// ============================================================
+// 초기화
+// ============================================================
+
+window.addEventListener('DOMContentLoaded', async () => {
+  await loadPool();
+
+  // 저장된 reviewer 자동 복원
+  const savedReviewer = localStorage.getItem(LS_KEY_REVIEWER);
+  if (savedReviewer) {
+    document.getElementById('input-reviewer').value = savedReviewer;
+  }
+});
+
+async function loadPool() {
+  try {
+    const resp = await fetch(POOL_URL);
+    if (!resp.ok) throw new Error('풀 데이터 로드 실패: HTTP ' + resp.status);
+    const pool = await resp.json();
+
+    // selected_ids에 해당하는 대화만 추출, pool_id 순 정렬
+    const selected = pool.dialogues
+      .filter(d => pool.selected_ids.includes(d.pool_id))
+      .sort((a, b) => a.pool_id - b.pool_id);
+
+    if (selected.length !== pool.selected_ids.length) {
+      throw new Error('selected_ids와 실제 대화 수가 일치하지 않습니다.');
+    }
+
+    state.pool = pool;
+    state.rubric = pool.rubric;
+    state.dialogues = selected;
+
+    console.log('풀 로드 완료:', selected.length, '개 대화');
+  } catch (err) {
+    showToast('풀 데이터를 불러올 수 없습니다: ' + err.message, 'error');
+    console.error(err);
+  }
+}
+
+// ============================================================
+// 화면 전환
+// ============================================================
+
+function showScreen(name) {
+  ['login', 'sessions', 'scoring', 'done'].forEach(s => {
+    document.getElementById('screen-' + s).hidden = (s !== name);
+  });
+  window.scrollTo(0, 0);
+}
+
+// ============================================================
+// 화면 1: 로그인
+// ============================================================
+
+function submitLogin() {
+  const input = document.getElementById('input-reviewer');
+  const id = input.value.trim();
+
+  if (id.length < 3) {
+    showToast('아이디는 3자 이상이어야 합니다.', 'error');
+    input.focus();
+    return;
+  }
+  if (!/^[a-zA-Z0-9가-힣_\-.]+$/.test(id)) {
+    showToast('아이디는 영문, 숫자, 한글, _, -, . 만 사용 가능합니다.', 'error');
+    input.focus();
+    return;
+  }
+
+  state.reviewer_id = id;
+  localStorage.setItem(LS_KEY_REVIEWER, id);
+  renderSessionsScreen();
+}
+
+function logout() {
+  if (!confirm('로그아웃하시겠습니까? 진행 중인 세션 정보는 브라우저에 남아 있습니다.')) return;
+  state.reviewer_id = null;
+  state.session = null;
+  showScreen('login');
+}
+
+// ============================================================
+// 화면 2: 세션 선택
+// ============================================================
+
+async function renderSessionsScreen() {
+  document.getElementById('tag-reviewer').textContent = '학생 ID: ' + state.reviewer_id;
+  showScreen('sessions');
+
+  // 로컬 스토리지의 진행 중 세션들
+  const localSessions = getLocalSessions(state.reviewer_id);
+
+  const container = document.getElementById('existing-sessions');
+  container.innerHTML = '';
+
+  if (localSessions.length === 0) return;
+
+  const heading = document.createElement('p');
+  heading.style.cssText = 'font-size: 13px; color: var(--text-muted); margin: 1.25rem 0 0.5rem;';
+  heading.textContent = '이전 세션 (이어서 할 수 있습니다)';
+  container.appendChild(heading);
+
+  localSessions.forEach(s => {
+    const completed = s.scores.filter(x => x !== null && x !== undefined).length;
+    const div = document.createElement('div');
+    div.className = 'session-option';
+    const ts = s.start_timestamp.replace('T', ' ').replace(/\..+/, '').replace(/Z$/, '');
+    div.innerHTML = `
+      <h3>${completed === 10 ? '완료된 세션' : '진행 중인 세션'} (${completed}/10)</h3>
+      <p class="desc">${completed === 10 ? '완료된 세션을 다시 확인할 수 있습니다.' : '남은 ' + (10 - completed) + '개를 이어서 채점합니다.'}</p>
+      <p class="meta">${ts}</p>
+    `;
+    div.onclick = () => resumeSession(s);
+    container.appendChild(div);
+  });
+}
+
+function startNewSession() {
+  const startTs = new Date().toISOString();
+  state.session = {
+    start_timestamp: startTs,
+    scores: Array(10).fill(null),
+    comments: Array(10).fill(''),
+    current_index: 0,
+  };
+  saveLocalSession(state.reviewer_id, state.session);
+  renderScoringScreen();
+}
+
+function resumeSession(session) {
+  state.session = { ...session };
+  // 완료된 세션이면 done 화면으로, 아니면 첫 미완료 지점으로
+  const completed = session.scores.filter(x => x !== null && x !== undefined).length;
+  if (completed === 10) {
+    renderDoneScreen();
+  } else {
+    // 첫 null 지점을 current_index로
+    const nextIdx = session.scores.findIndex(x => x === null || x === undefined);
+    state.session.current_index = nextIdx >= 0 ? nextIdx : 0;
+    renderScoringScreen();
+  }
+}
+
+// ============================================================
+// 화면 3: 채점
+// ============================================================
+
+function renderScoringScreen() {
+  showScreen('scoring');
+  renderCurrentDialogue();
+}
+
+function renderCurrentDialogue() {
+  const idx = state.session.current_index;
+  const d = state.dialogues[idx];
+  const rubric = state.rubric;
+
+  // 진행률
+  const completed = state.session.scores.filter(x => x !== null && x !== undefined).length;
+  document.getElementById('progress-count').textContent = `${idx + 1} / 10 (${completed} 완료)`;
+  document.getElementById('progress-fill').style.width = ((idx + 1) / 10 * 100) + '%';
+  document.getElementById('rubric-name').textContent = rubric.name_ko + ' (' + rubric.type + ')';
+
+  // 대화 메타
+  document.getElementById('dialogue-meta').textContent =
+    `#${idx + 1} · pool_id ${d.pool_id} · source_id ${d.source_id} · ${d.length}자`;
+
+  // 원문
+  document.getElementById('dialogue-text').textContent = d.dialogue;
+
+  // 한국어
+  document.getElementById('dialogue-ko').textContent = d.dialogue_ko || '(번역 없음)';
+
+  // 임상 노트
+  const noteBlock = d.note_ko
+    ? (d.note + '\n\n--- 한국어 요약 ---\n' + d.note_ko)
+    : d.note;
+  document.getElementById('note-content').textContent = noteBlock;
+
+  // 핵심 포인트
+  const kpList = document.getElementById('keypoints-list');
+  kpList.innerHTML = '';
+  (d.key_points_ko || []).forEach(p => {
+    const li = document.createElement('li');
+    li.textContent = p;
+    kpList.appendChild(li);
+  });
+
+  // 루브릭 테이블
+  document.getElementById('rubric-display-name').textContent = rubric.name_ko + ' (0~' + rubric.scale_max + '점)';
+  const tbl = document.getElementById('rubric-table');
+  tbl.innerHTML = '';
+  rubric.criteria.forEach(c => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${c.score}점</td><td>${c.condition}<br/><span style="color: var(--text-muted); font-size: 12px;">${c.example}</span></td>`;
+    tbl.appendChild(tr);
+  });
+
+  // 점수 버튼
+  const btnContainer = document.getElementById('score-buttons');
+  btnContainer.innerHTML = '';
+  for (let i = rubric.scale_min; i <= rubric.scale_max; i++) {
+    const btn = document.createElement('button');
+    btn.className = 'score-btn';
+    btn.textContent = i;
+    btn.dataset.score = i;
+    if (state.session.scores[idx] === i) btn.classList.add('selected');
+    btn.onclick = () => selectScore(i);
+    btnContainer.appendChild(btn);
+  }
+
+  // 기존 Comment
+  document.getElementById('input-comment').value = state.session.comments[idx] || '';
+
+  // 버튼 상태
+  document.getElementById('btn-prev').disabled = (idx === 0);
+  const nextBtn = document.getElementById('btn-next');
+  nextBtn.textContent = (idx === 9) ? '저장하고 완료 ✓' : '저장하고 다음 →';
+}
+
+function selectScore(score) {
+  const idx = state.session.current_index;
+  state.session.scores[idx] = score;
+
+  document.querySelectorAll('.score-btn').forEach(b => {
+    b.classList.toggle('selected', parseInt(b.dataset.score) === score);
+  });
+}
+
+function goPrev() {
+  if (state.session.current_index > 0) {
+    state.session.comments[state.session.current_index] = document.getElementById('input-comment').value;
+    state.session.current_index -= 1;
+    renderCurrentDialogue();
+  }
+}
+
+async function saveAndNext() {
+  const idx = state.session.current_index;
+  const score = state.session.scores[idx];
+
+  if (score === null || score === undefined) {
+    showToast('점수를 선택해주십시오.', 'error');
+    return;
+  }
+
+  // Comment 저장
+  state.session.comments[idx] = document.getElementById('input-comment').value;
+
+  // 서버 POST
+  const d = state.dialogues[idx];
+  const btn = document.getElementById('btn-next');
+  btn.disabled = true;
+  btn.textContent = '저장 중...';
+
+  try {
+    await postResponse({
+      reviewer_id: state.reviewer_id,
+      start_timestamp: state.session.start_timestamp,
+      rubric_type: state.rubric.type,
+      dialogue_pool_id: d.pool_id,
+      dialogue_source_id: d.source_id,
+      rubric_score: score,
+      comment: state.session.comments[idx],
+    });
+    // 로컬 저장
+    saveLocalSession(state.reviewer_id, state.session);
+  } catch (err) {
+    btn.disabled = false;
+    btn.textContent = (idx === 9) ? '저장하고 완료 ✓' : '저장하고 다음 →';
+    showToast('저장 실패: ' + err.message + ' — 잠시 후 다시 시도해주십시오.', 'error');
+    return;
+  }
+
+  // 다음 화면
+  if (idx === 9) {
+    renderDoneScreen();
+  } else {
+    state.session.current_index += 1;
+    renderCurrentDialogue();
+  }
+}
+
+// ============================================================
+// 화면 4: 완료
+// ============================================================
+
+function renderDoneScreen() {
+  showScreen('done');
+  const code = `session = load_session("${state.reviewer_id}", "${state.session.start_timestamp}")`;
+  document.getElementById('colab-code-text').textContent = code;
+}
+
+function copyCode() {
+  const btn = document.querySelector('.copy-btn');
+  const text = document.getElementById('colab-code-text').textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    btn.textContent = '복사됨 ✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '복사';
+      btn.classList.remove('copied');
+    }, 2000);
+  });
+}
+
+function goBackToSessions() {
+  renderSessionsScreen();
+}
+
+// ============================================================
+// 서버 통신
+// ============================================================
+
+async function postResponse(payload) {
+  const resp = await fetch(ENDPOINT, {
+    method: 'POST',
+    body: JSON.stringify(payload),
+    // Content-Type 생략 → simple request로 preflight 회피
+  });
+  if (!resp.ok) throw new Error('HTTP ' + resp.status);
+  const data = await resp.json();
+  if (!data.ok) throw new Error(data.error || '서버 오류');
+  return data;
+}
+
+// ============================================================
+// 로컬 스토리지 (세션 상태 유지)
+// ============================================================
+
+function saveLocalSession(reviewerId, session) {
+  const key = LS_KEY_SESSION_PREFIX + reviewerId + '_' + session.start_timestamp;
+  localStorage.setItem(key, JSON.stringify(session));
+}
+
+function getLocalSessions(reviewerId) {
+  const prefix = LS_KEY_SESSION_PREFIX + reviewerId + '_';
+  const sessions = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key.startsWith(prefix)) {
+      try {
+        sessions.push(JSON.parse(localStorage.getItem(key)));
+      } catch (e) { /* 스킵 */ }
+    }
+  }
+  // 최신순 정렬
+  sessions.sort((a, b) => b.start_timestamp.localeCompare(a.start_timestamp));
+  return sessions;
+}
+
+// ============================================================
+// Toast (알림)
+// ============================================================
+
+let toastTimer = null;
+function showToast(msg, type) {
+  const toast = document.getElementById('toast');
+  toast.textContent = msg;
+  toast.className = type || '';
+  toast.hidden = false;
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { toast.hidden = true; }, 3500);
+}
+</script>
 
 </body>
 </html>
