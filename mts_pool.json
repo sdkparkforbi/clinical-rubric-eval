@@ -1,0 +1,212 @@
+[
+  {
+    "pool_id": 1,
+    "source_id": 525,
+    "dialogue": "Doctor: Are you working these days?\nPatient: No, sir. I've been retired for a couple years now.\nDoctor: Congratulations. I hope you're enjoying your time off.\nPatient: You bet.\nDoctor: You mentioned having a smoking history. When did you quit and approximately how much did you smoke?\nPatient: Uh I quit about twenty seven years ago. If I had to guess, I smoked about two packs a day.\nDoctor: Did you smoke only cigarettes?\nPatient: Cigars, too.\nDoctor: How about alcohol?\nPatient: Hardly ever. \nDoctor: Great.",
+    "note": "Symptoms: N/A\nDiagnosis: N/A\nHistory of Patient: stopped smoking 27 years ago after smoking approximately two packs a day (cigarettes and cigars), hardly ever uses alcohol, currently retired.\nPlan of Action: N/A",
+    "length": 510
+  },
+  {
+    "pool_id": 2,
+    "source_id": 658,
+    "dialogue": "Doctor: Are you a student? \nPatient: Yes, I am. I go to the University. \nDoctor: What are you majoring in? Or do you know yet? \nPatient: Yes! I am studying biology.  \nDoctor: Excellent! Do you live in the dorms? \nPatient: Yes. \nDoctor: Are you from the area? \nPatient: I am from Breckenridge. That is where my parents live. \nDoctor: That is a beautiful place to be from. Do you use any tobacco, alcohol, or recreational drugs? \nPatient: I have smoked weed with friends, off and on but not much. I have a few beers at the occasional dorm party.",
+    "note": "Symptoms: N/A\r\nDiagnosis: N/A\r\nHistory of Patient: The patient is a student at the University majoring in biology.  He lives in a dorm there.  His parents live in Breckenridge.  He admits to having smoked marijuana off and on with friends and drinking beer off and on as well.\r\nPlan of Action: N/A\r\n",
+    "length": 543
+  },
+  {
+    "pool_id": 3,
+    "source_id": 31,
+    "dialogue": "Doctor: I understand that you are new to the clinic. Welcome. \nPatient: Yes, I am new here. I have lived in Arizona for the last four years. I am from Maine. That is where I grow up and most of my family still lives there.  \nDoctor: What line of work are you in? \nPatient: I am a homemaker. I used to clean house, a while back.  \nDoctor: Do you have children? \nPatient: I have two children but only one of them is still with us. My oldest son passed away from ulcerative colitis complications three years ago.  \nDoctor: I am so sorry to hear that!",
+    "note": "Symptoms: N/A.\r\nDiagnosis: N/A.\r\nHistory of Patient: Originally from Maine, lived in Arizona for 4 years. Has 2 children, one deceased from complications of ulcerative colitis. Predominantly a homemaker but has done domestic cleaning work in the past.\r\nPlan of Action: N/A.\r\n",
+    "length": 547
+  },
+  {
+    "pool_id": 4,
+    "source_id": 334,
+    "dialogue": "Doctor: How are you doing with everything?\nPatient: I'm good. It's hard when you are in quarantine. I hope things will get back to normal soon. \nDoctor: So, you are here for your breast examination. \nPatient: Yes, it was due for so long. \nDoctor: I'm going to touch both of your breasts one by one to check for any lump or kind of mass. Okay?\nPatient: Yeah. \nDoctor: Okay, so both looks good. Are you feeling any pain while I'm touching?\nPatient: No, I don't feel any pain. \nDoctor: That's good, no masses, no pain and I do not feel anything in your armpit area.",
+    "note": "Symptoms: N/A\nDiagnosis: The breasts show no masses or tenderness.  No axillary adenopathy.\nHistory of Patient: N/A\nPlan of Action: N/A\n ",
+    "length": 562
+  },
+  {
+    "pool_id": 5,
+    "source_id": 816,
+    "dialogue": "Doctor: So, lets talk about your family, anybody in your family have any neurological problems?\nPatient: No, I don't think so, my parents did experience some memory loss but that was when they were in their nineties. And I am assuming it was mostly from the old age rather than any neuro problem. \nDoctor: Yeah, that is true. And how about your brothers and sisters, do you have any? \nPatient: Oh yeah, I have five siblings and they are pretty healthy! I mean all of them are doing good, no one has any memory issues as far as I know or any neuro related illness. \nDoctor: Okay.",
+    "note": "Symptoms: N/A\r\nDiagnosis: N/A\r\nHistory of Patient: Both parents experienced memory problems in their ninth decades, but not earlier. 5 siblings have had no memory trouble. No neurological illnesses in the family.\r\nPlan of Action: N/A",
+    "length": 578
+  },
+  {
+    "pool_id": 6,
+    "source_id": 1194,
+    "dialogue": "Guest_clinician: Do you have his full medical history? \nDoctor: Yes, I confirmed with his wife. He had a CABG done in ninety one. He has a history of radical prostate cancer for which he underwent a radical prostatectomy and nephrectomy.  \nGuest_clinician: Any additional surgeries? \nDoctor: Yes. He had lumbar surgery twice before. He suffered from lumbar stenosis many years ago in the sixties and seventies. He's actually due for another lumbar surgery with Doctor Y. He takes Percocet daily for his back pain.  He also has a history of hypertension and hyperlipidemia.  \nGuest_clinician: I think I got it all down.",
+    "note": "Symptoms: N/A\r\nDiagnosis: N/A\r\nHistory of Patient: Includes coronary artery disease, status post CABG in 1991, radical prostate cancer, status post radical prostatectomy, nephrectomy for the same cancer, hypertension, lumbar surgery done twice previously, lumbar stenosis many years ago in the 1960s and 1970s, now followed by Dr. Y with another lumbar surgery scheduled to be done shortly after this evaluation, and hyperlipidemia. Note that due to back pain, he had been taking Percocet daily prior",
+    "length": 618
+  },
+  {
+    "pool_id": 7,
+    "source_id": 233,
+    "dialogue": "Doctor: What do you do in the hospital?\nPatient: I work as a phlebotomist and respiratory therapist. \nDoctor: Ok, how old are you?\nPatient: I am fifty four.\nDoctor: You are very young.\nPatient: Thank you!\nPatient: So, as you remember I was trying to measure blood gas as I was working with a patient and I accidently jammed that needle inside my right hand index finger.   \nPatient: I am coming for regular screening.\nDoctor: Were you wearing gloves?\nPatient: Yes, I had gloves and protective clothing.\nDoctor: Yes, thank you for that. Did they screen patient?\nPatient: Yes, he got negative HIV but positive Hep C.\nDoctor: Ok.\nPatient: I am scared.",
+    "note": "Symptoms: accidentally jammed a needle into his right hand index finger.\r\nDiagnosis: patient tested negative for HIV but positive for Hepatitis C.\r\nHistory of Patient: The patient, a 54-year-old right-handed male, accidentally jammed a needle into his right hand index finger while working as a phlebotomist and respiratory therapist. He was wearing gloves and protective clothing at the time of the incident. The source patient tested negative for HIV but positive for Hepatitis C.\r\nPlan of Action: ",
+    "length": 648
+  },
+  {
+    "pool_id": 8,
+    "source_id": 1165,
+    "dialogue": "Doctor: I see here that Doctor- \nPatient: Yes, Doctor X referred me. My thyroid is an absolute mess. I have never been in so much pain in my seventy one years. \nDoctor: I'm so sorry to hear that. I hope we're able to get you the care that you need. \nPatient: I've been coughing up a storm. It's gotten to be way too enlarged. \nDoctor: It's good that you're here today to get the surgery rolling. \nPatient: I signed the paperwork and everything. \nDoctor: I'll go over the risk and benefits one more time. Any questions for me?\nPatient: When is the earliest I can get this done again? \nDoctor: Given your symptoms, I'd like to get you in in the next few days.",
+    "note": "Symptoms: Increasingly symptomatic large nodular thyroid goiter, coughing.\r\nDiagnosis: N/A\r\nHistory of Patient: The patient is a 71-year-old female referred with increasingly symptomatic large nodular thyroid goiter. She presented now after informed consent for the procedure, understanding the inherent risks and complications and risk-benefit ratio.\r\nPlan of Action: N/A\r\n",
+    "length": 657
+  },
+  {
+    "pool_id": 9,
+    "source_id": 306,
+    "dialogue": "Doctor: Welcome into the clinic! I would like to start with your past medical history.  \nPatient: I have high blood pressure and macular deterioration. Last year I caught pneumonia but that has cleared up.\nDoctor: Okay.  What brings you in today? \nPatient: I have had this cough and pain on the right side of my abdomen. \nDoctor: How long has this been going on? \nPatient: Two days. I have had body aches and have been feeling nauseous too. \nDoctor: Have you had a fever? \nPatient: I think so. I was chilled and my forehead was warm. The cough is a dry sounding cough. \nDoctor: Does the abdominal pain come during one of these coughing episodes? \nPatient: Yes.",
+    "note": "Symptoms: cough (dry sounding), pain on the right side of abdomen, body aches, nausea, fever (chilled with warm forehead)\r\nDiagnosis: N/A\r\nHistory of Patient: Symptoms present for two days, abdominal pain occurs during coughing episodes\r\nPlan of Action: N/A\r",
+    "length": 660
+  },
+  {
+    "pool_id": 10,
+    "source_id": 0,
+    "dialogue": "Doctor: What brings you back into the clinic today, miss? \nPatient: I came in for a refill of my blood pressure medicine. \nDoctor: It looks like Doctor Kumar followed up with you last time regarding your hypertension, osteoarthritis, osteoporosis, hypothyroidism, allergic rhinitis and kidney stones.  Have you noticed any changes or do you have any concerns regarding these issues?  \nPatient: No. \nDoctor: Have you had any fever or chills, cough, congestion, nausea, vomiting, chest pain, chest pressure?\nPatient: No.  \nDoctor: Great. Also, for our records, how old are you and what race do you identify yourself as?\nPatient: I am seventy six years old and identify as a white female.",
+    "note": "Symptoms: no fever, no chills, no cough, no congestion, no nausea, no vomiting, no chest pain, no chest pressure.\nDiagnosis: hypertension, osteoarthritis, osteoporosis, hypothyroidism, allergic rhinitis, kidney stones\nHistory of Patient: 76-year-old white female, presents to the clinic today originally for hypertension and a med check, followed by Dr. Kumar, issues stable\nPlan of Action: N/A",
+    "length": 685
+  },
+  {
+    "pool_id": 11,
+    "source_id": 83,
+    "dialogue": "Doctor: Hello. How are you feeling today? \nPatient: Great. I'm just here for my yearly physical. \nDoctor: Oh, good. I see your past medical history is missing. Do you, by chance, know if you've had any health related problems before? \nPatient: Uhm. Let me check my notes on my phone. I knew this question would pop up, but I always forget. Oh, perfect. You can take a look at them. \nDoctor: Thank you. I just want to verify the information with you. You had asthma, nasal inflammation, and some abnormal growth on you neck, correct? \nPatient: If it's on there, then it's true. I usually don't remember these kinds of things. My wife is usually here with me. She knows all about my health.",
+    "note": "Symptoms: N/A.\r\nDiagnosis: Asthma, nasal inflammation, abnormal growth on neck (per patient's notes).\r\nHistory of Patient: N/A.\r\nPlan of Action: N/A.\r\n",
+    "length": 688
+  },
+  {
+    "pool_id": 12,
+    "source_id": 1122,
+    "dialogue": "Doctor: Do you live alone? \nPatient: I do. I lost my husband to prostate cancer last year. \nDoctor: Oh wow. I'm so deeply sorry for your loss. Losing a loved one is incredibly difficult. I lost my sister to cervical cancer two years ago. It was one of the hardest experiences of my life. \nPatient: I'm sorry for your loss as well. It helps to remember the positive memories you had with them.  \nDoctor: Yes, definitely. How have you been doing otherwise? \nPatient: Not bad. I've been keeping myself busy with gardening. \nDoctor: Gardening is a great hobby. \nPatient: Yes, I enjoy it very much. It brings me a lot of peace. \nDoctor: And as your doctor I have to ask, but any history of alcohol or drug use? \nPatient: No.",
+    "note": "Symptoms: N/A\r\nDiagnosis: N/A\r\nHistory of Patient: widow, lives alone\r\nPlan of Action: N/A\r\n",
+    "length": 719
+  },
+  {
+    "pool_id": 13,
+    "source_id": 496,
+    "dialogue": "Doctor: Hello and welcome to our dermatology office. What is the reason for your visit? \nPatient: I have these rashes on my arms. \nDoctor: Let me take a look. Do you have prior reports about your history? \nPatient: Yeah, I do. I gave it to the nurse. \nDoctor: Let me go get it really quick. I'm reading the report and it looks like your family is positive for atopy. \nPatient: Oh, yeah. We all usually get some type of rash. \nDoctor: I see. Do you know if you have psoriasis? \nPatient: Uh. What's that's? \nDoctor: It's a skin disease that usually has scaly patches. \nPatient: Uhm. I don't think so. \nDoctor: Great. Before I prescribe you medicine to treat your eczema, are you allergic to any drugs?\nPatient: Not that I know of.",
+    "note": "Symptoms: rashes on the arms\r\nDiagnosis: eczema\r\nHistory of Patient: Patient presents with rashes on the arms, positive atopic family history, denies psoriasis, no known drug allergies\r\nPlan of Action: N/A\r\n",
+    "length": 728
+  },
+  {
+    "pool_id": 14,
+    "source_id": 102,
+    "dialogue": "Doctor: What is wrong with your back honey?\nPatient: Oh, it all started off with a little pimple on the buttock.  I was soaking it at home with hot water and stuff, but it did not improve. I hope this is not cancer. I am only twenty four. \nDoctor: Okay what exactly are you experiencing?\nPatient: I have pain.\nDoctor: So you came to the hospital on the first and they did an I and D in E D?\nPatient:   Yes I was admitted to the hospitalist service with high blood sugars. My African American father was so scared. \nDoctor: Okay sugars high. Do you know the number? How high?\nPatient: No, I do not know that but they found positive bacteria or some sort of thing in my blood culture. \nDoctor:  So today we are evaluating you for surgery?\nPatient: Yes.",
+    "note": "Symptoms: Pain in the back.\r\nDiagnosis: N/A.\r\nHistory of Patient: Started with a pimple on the buttock, soaked it at home with hot water but no improvement, concerned about cancer at age 24. Admitted to hospitalist service on the first with high blood sugars, father was scared. Positive bacteria found in blood culture.\r\nPlan of Action: Evaluating patient for surgery.\r\n",
+    "length": 750
+  },
+  {
+    "pool_id": 15,
+    "source_id": 745,
+    "dialogue": "Doctor: And you are-\nGuest_family: Hi, I am her nurse. \nDoctor: So, do you know about her past medical history?\nGuest_family: I have very limited information, as I very recently started working with her. She does have dementia and that's the main reason why I was hired. Her family wanted someone to look after her twenty four seven. \nDoctor: Oh, I see. \nGuest_family: But I do have her medical records. You can have a look.\nDoctor: Yeah, that will be nice. Let me check her reports quickly. She has a history schizophrenia, chronic anemia and hypothyroidism and she also suffers from asthma. \nGuest_family: Yes. \nDoctor: Oh, I also see here she tested positive for P P D, was she diagnosed with tuberculosis? \nGuest_family: I honestly don't know, but I wasn't told that.\nDoctor: Okay.",
+    "note": "Symptoms: N/A\r\nDiagnosis: Dementia, asthma, chronic anemia, hypothyroidism, schizophrenia, positive PPD in the past\r\nHistory of Patient: N/A\r\nPlan of Action: N/A\r\n",
+    "length": 785
+  },
+  {
+    "pool_id": 16,
+    "source_id": 217,
+    "dialogue": "Doctor: Hello! What brings you back into the clinic today? \nPatient: I came back because I increased my methothrexate as we discussed the last time I was here. A few days later I started getting multiple canker sores in my mouth. They hurt. \nDoctor: I am sorry. It is likely that the increased dosage of your methothrexate is the cause of the mouth sores. Have you experienced a decreased appetite, nausea, abdominal discomfort or diarrhea?\nPatient: No. It is painful to eat with the sores, but I still have an appetite. \nDoctor: Have you had any new rashes, or hair loss? \nPatient: No. \nDoctor: I would like to get some bloodwork done. I would also recommend we decrease your dosage back to your previous amount. I would also like to see you back in two weeks to see how you are doing. \nPatient: Okay.",
+    "note": "Symptoms: multiple canker sores in mouth, pain while eating\r\nDiagnosis: stomatitis, possibly methotrexate related\r\nHistory of Patient: increased methotrexate dosage, resulting in mouth sores\r\nPlan of Action: decrease methotrexate dosage back to previous amount, bloodwork, follow-up appointment in two weeks\r\n",
+    "length": 802
+  },
+  {
+    "pool_id": 17,
+    "source_id": 1272,
+    "dialogue": "Doctor: How many days has it been since your headaches started? \nPatient: About two days now. \nDoctor: How long do they normally last? \nPatient: A couple hours. \nDoctor: Any nausea or vomiting with the headaches? Any vision changes?\nPatient: Yeah, it's been pretty consistent. No vision changes.\nDoctor: Have you tried to take anything for it? \nPatient: No, nothing. Oh and I have some dizziness with the headaches, too. \nDoctor: How would you describe the dizziness? Room spinning? \nPatient: Um kind of. \nDoctor: Is this new for you? \nPatient: Yeah. I've never had headaches like this before. \nDoctor: Do you have any chest pains or an irregular heart beat?\nPatient: No.\nDoctor: Any numbness or tingling on any part of your body?\nPatient: No. \nDoctor: Okay. How is your urine and feces? Any blood? Any diarrhea?\nPatient: None, thankfully.",
+    "note": "Symptoms: Headaches for about two days, lasting a couple of hours, consistent nausea and vomiting, dizziness, no vision changes, no chest pain, irregular heartbeat, numbness, or tingling, no diarrhea, melena, hematemesis, no urinary or fecal blood\nDiagnosis: HEENT: See has had headaches, and some dizziness. She denies any vision changes. CARDIAC: She denies any chest pain or palpitations. RESPIRATORY: She denies any shortness of breath. GI: She has had persistent nausea and vomiting. She denies ",
+    "length": 839
+  },
+  {
+    "pool_id": 18,
+    "source_id": 976,
+    "dialogue": "Doctor: What's a young thirty one year old like you doing in my office today, ma'am?\nPatient: Well, I got referred to P T after I had a fall. \nDoctor: When was your fall?\nPatient: Um, it was on October third two thousand eight. \nDoctor: What happened when you fell?\nPatient: I tripped over my dog's toy. \nDoctor: Did you twist your foot or ankle? \nPatient: Yeah, my left foot inverted. \nDoctor: Have you had any imaging done on this foot?\nPatient: Yeah, um, I've had x rays and an M R I already. \nDoctor: What were the impressions of those images?\nPatient: They told me that it was unremarkable. \nDoctor: How was the pain progressed since the onset? \nPatient: Well, after a month or so, the pain is still so bad I can't do any of my activities. \nDoctor: How long have you been wearing this walking boot?\nPatient: Um, it's been about a month now.",
+    "note": "Symptoms: significant debilitating pain in left ankle\r\nDiagnosis: N/A\r\nHistory of Patient: fell on 10/03/08 after tripping over dog toy, left foot inverted, received unremarkable x-rays and MRIs, continued significant pain after 1 month, wearing walking boot for past month\r\nPlan of Action: N/A\r\n",
+    "length": 845
+  },
+  {
+    "pool_id": 19,
+    "source_id": 1257,
+    "dialogue": "Doctor: Welcome to the office, Miss A. I am Doctor Luna. \nPatient: Thank you. It is nice to meet you. \nDoctor: What is your family medical history? \nPatient: My mother died about three or maybe it is four years ago? \nDoctor: I am so sorry to hear that. How did she pass? \nPatient: She had lung cancer. My mom didn't talk much about her own health problems. \nDoctor: What about your father? Does he have any health conditions? \nPatient: My dad has gout. I think he also had blood clots. That is all that I can remember my dad talking about. \nDoctor: Do you have siblings? \nPatient: Yes. My brother has asthma and uses an inhaler. My sister had some sort of tumors removed from her stomach or something.  Oh, I think I remember my mom talking about some of her family having issues with high blood pressure, high cholesterol and someone had a stroke. I am not sure though. \nDoctor: Okay.",
+    "note": "Symptoms: N/A\nDiagnosis: N/A\nHistory of Complaint: Difficulty providing familial medical history, mother deceased from lung cancer, father has gout and blood clots, siblings treated for asthma and GI tumors, uncertain about other familial medical conditions\nPlan of Action: N/A\n",
+    "length": 885
+  },
+  {
+    "pool_id": 20,
+    "source_id": 742,
+    "dialogue": "Doctor: Good afternoon, ma'am. Before we begin, may I ask how old you are? \nPatient: Good afternoon, doctor. I'm fifty six years old, now. \nDoctor: Great, thank you. What seems to be the problem today, ma'am? \nPatient: Well, I need some support for dietary recommendations for healthy eating for my husband and me. \nDoctor: Why would that be, ma'am? \nPatient: Um, I have a lot going on, high cholesterol, high blood pressure, acid reflux, and I just want to lose some weight. My husband has high cholesterol too. \nDoctor: Tell me more about your eating habits, please. \nPatient: Well, we live by ourselves now that our children are gone, but I'm used to cooking really large portions. \nDoctor: Are you struggling to make food for just two people? \nPatient: Yes, that's a good way to put it. I'd like to just make less food, that way we're not so tempted to eat so much. \nDoctor: I understand, are you busy, do you work? \nPatient: Well, I start a new job this week.",
+    "note": "Symptoms: N/A\r\nDiagnosis: N/A\r\nHistory of Patient: 56-year-old female seeking dietary consultation for hyperlipidemia, hypertension, gastroesophageal reflux disease, and weight reduction; husband also diagnosed with high blood cholesterol; struggling with adjusting to preparing food for two people after cooking for larger portions; starting a new job\r\nPlan of Action: N/A\r\n",
+    "length": 964
+  },
+  {
+    "pool_id": 21,
+    "source_id": 22,
+    "dialogue": "Doctor: Any past medical history? \nPatient: Um there were a couple times where I noticed my blood pressure was high but that's improved as of late. \nDoctor: When did these episodes occur? \nPatient: About a year ago. \nDoctor: Did you follow up with your previous doctor? \nPatient: Yeah, my old doctor knows. \nDoctor: Okay then. Let's see. Have you been checking your own blood pressure as a result? \nPatient: No not really.  \nDoctor: It looks like your blood pressure was normal today, which is a good sign. \nPatient: Great. \nDoctor: Hm any allergies to medications? \nPatient: None that I know of. \nDoctor: And it looks like you have gained about fourteen pounds since last year. Any new diet changes or stressors? \nPatient: I lost my job last January and it took a pretty big toll on me. \nDoctor: I'm sorry to hear that. How have you been coping? \nPatient: I'm doing better now but I need to watch what I eat. I tend to eat a lot more when I'm stressed. It's something I'm working on.",
+    "note": "Symptoms: N/A.\r\nDiagnosis: N/A.\r\nHistory of Patient: Episodes of high blood pressure about a year ago, weight gain of approximately 14 pounds since last year, attributed to stress after losing job in January.\r\nPlan of Action: N/A.\r\n",
+    "length": 984
+  },
+  {
+    "pool_id": 22,
+    "source_id": 703,
+    "dialogue": "Doctor: Any fever, chills or rigors? \nPatient: No.\nDoctor: Any blurring of vision or history of glaucoma or cataract?\nPatient: No.\nDoctor: Did you experience any shortness of breath?\nPatient: No.\t\nDoctor: Any stomach discomfort?\nPatient: No.\nDoctor: Did you observe blood in your stool or in vomit?\nPatient: No, nothing like that. \nDoctor: Okay, good. Did you notice any increase in your urine frequency or urgency?\nPatient: No.\nDoctor: Do you feel any muscle weakness or tiredness? \nPatient: No, nothing of that sort.\nDoctor: Any known history of arthritis? \nPatient: Nope.\nDoctor: And no fever due to any fungal infection or anything, right? Like valley fever?\nPatient: No, nothing of that sort.\nDoctor: Any history of pneumonia?\nPatient: No. \nDoctor: And I am looking at your chart, so no history of stroke, C V A, or any seizure disorder.\nPatient: That's correct.\nDoctor: No thyroid or hormone related problem? \nPatient: No.\nDoctor: And you do not have any blood disorders, right?\nPatient: That is right.",
+    "note": "Symptoms: No fever, chills, rigors; no blurring of vision, glaucoma, or cataracts; no shortness of breath; no stomach discomfort; no blood in stool or vomit; no increase in urine frequency or urgency; no muscle weakness or tiredness; no history of arthritis; no fever due to fungal infection or valley fever; no history of pneumonia; no history of stroke, CVA, or seizure disorder; no thyroid or hormone-related problems; no blood disorders\r\nDiagnosis: N/A\r\nHistory of Patient: N/A\r\nPlan of Action: N",
+    "length": 1008
+  },
+  {
+    "pool_id": 23,
+    "source_id": 380,
+    "dialogue": "Doctor: I mean, I am so happy to see your report today, your blood pressure looks much better. That's amazing given your past few visits your B P was out of control and even with changing your medications we were having tough time bringing it down. \nPatient: Yeah, I feel much better, I read about my condition and it is called something as um refraction or--\nDoctor: Refractory hypertension.\nPatient: Oh yeah that!\nDoctor: But the good news is that it is getting better. \nPatient: Yes.\nDoctor: Last time we talked about seeing the internal medicine doctor there at your senior center, right?\nPatient: Yes, I made an appointment last week, um, no week before that, but I completely forgot about it.\nDoctor: Hm, okay we need to reschedule that. \nPatient: Yes, I will do it today.\nDoctor: Okay, your reports look fine. G F R is below sixty percent, that's a good sign.  Overall, Miss K, you look better, but we need to reschedule your appointment with the Internist. That's kind of important.\nPatient: Okay, I will do that. Thank you!\nDoctor: You are welcome.",
+    "note": "Symptoms: N/A.\r\nDiagnosis: Refractory hypertension.\r\nHistory of Patient: Patient has a history of refractory hypertension, with recent improvement in blood pressure readings. Missed appointment with internist at senior center, GFR below sixty percent.\r\nPlan of Action: Reschedule appointment with internist at senior center.\r\n",
+    "length": 1057
+  },
+  {
+    "pool_id": 24,
+    "source_id": 1035,
+    "dialogue": "Doctor: So, tell me what's going on with you?\nPatient: Well, yesterday evening between seven or eight I developed nausea and suddenly it started hurting on the right side of my chest? \nDoctor: Where exactly did it hurt? \nPatient: Ah, my upper chest part and it went all around my right side till my back.\nDoctor: Okay, how do you feel now?\nPatient: I feel very weak and tired, don't feel like doing anything but resting. \nDoctor: Any fever?\nPatient: Yeah, nurse just took my temperature it was one hundred point three. \nDoctor: Okay. Did you have these symptoms before? \nPatient: No, first time. I never felt like this before.\nDoctor: Okay. Any chills or shivering? \nPatient: No.\nDoctor: When was your last bowel movement? \nPatient: It was yesterday. \nDoctor: Did you notice any blood in your stool or any rectum bleeding?\nPatient: No.\nDoctor: How old are you?\nPatient: I am twenty eight.\nDoctor: Okay, and you had a gastric bypass surgery, one year ago. \nPatient: Yes, almost one year ago. I lost about two hundred pounds after that.\nDoctor: And you felt well after the surgery? \nPatient: Absolutely! Until yesterday when my nausea and pain started. \nDoctor: Okay.",
+    "note": "Symptoms: Nausea, right upper quadrant pain wrapping around to the right side and back, malaise, low-grade fever (100.3°F).\r\nDiagnosis: N/A\r\nHistory of Patient: Status post gastric bypass surgery nearly one year ago. Lost about 200 pounds after surgery. Developed nausea and right upper quadrant pain yesterday evening. Denies prior similar Symptoms. Last normal bowel movement was yesterday. Denies chills or blood per rectum.\r\nPlan of Action: N/A\r\n",
+    "length": 1165
+  },
+  {
+    "pool_id": 25,
+    "source_id": 241,
+    "dialogue": "Doctor: Hi Ryan, what brings you here today?\nPatient: Well, you told me to follow up if my cough doesn't get better. Also, I started having several other issues. \nDoctor: Oh really!\nPatient: Yeah.\nDoctor: Okay, so tell me about your cough, is it getting worse than before? \nPatient: It's about the same but not getting better.\nDoctor: Hm. And what about your diarrhea and stomach pain?\nPatient: No more diarrhea and no pian. \nDoctor: Bowel movement?\nPatient: Normal.\nDoctor: Any pain while peeing? Are you able to empty your bladder completely?\nPatient: No pain and no problem emptying my bladder.\nDoctor: Okay good. Any nausea or vomiting?\nPatient: Nope, but I have developed this weird sore taste in my mouth.\nDoctor: Oh okay. How long?\nPatient: Since last week.\nDoctor: I see. Any loss of appetite?\nPatient: No, not really. \nDoctor: Okay and what other issues were you talking about? \nPatient: Yeah, I am also having some trouble with my eyes, I am able see fine, but it feels kind of funny. \nDoctor: Okay. \nPatient: And then my back is hurting so much, and last week my right shoulder and neck started to hurt. \nDoctor: Did you injure it or had a fall or anything?\nPatient: No. \nDoctor: Okay.",
+    "note": "Symptoms: Cough not improving, sore taste in mouth since last week, \"trouble with eyes\" feeling funny but vision is fine, worsening back pain, right shoulder and neck pain over the last week with no injury reported.\r\nDiagnosis: N/A\r\nHistory of Patient: The patient reports cough not improving, sore taste in mouth since last week, \"trouble with eyes\" feeling funny but vision is fine, worsening back pain, right shoulder and neck pain over the last week with no injury reported. Denies diarrhea, abdo",
+    "length": 1196
+  },
+  {
+    "pool_id": 26,
+    "source_id": 281,
+    "dialogue": "Doctor: What seems to be the problem today? \nPatient: I've been having headaches for a while now. \nDoctor: How long have you been having these headaches? \nPatient: Um, I had my first one about two months ago. \nDoctor: Did you suddenly start having them, or was it more gradual? \nPatient: Um, I'd say it was more gradual. \nDoctor: Where do you feel your headaches? \nPatient: Right here, between my eyes. \nDoctor: How would you describe your symptoms? \nPatient: I'd say it feels like a pressure sensation. \nDoctor: What's the intensity of these headaches? \nPatient: Um, they're about moderately severe, I guess. \nDoctor: Do these headaches interfere with your ability to do your activities? \nPatient: Yes, they do. My regular activities are significantly more difficult now. \nDoctor: Do you have any sinus congestion? \nPatient: Yeah, I do. I also have some light sensitivity. \nDoctor: Are you stressed out at work? \nPatient: Yes, I have a very stressful job, doctor. \nDoctor: Are you sleeping well? \nPatient: Well, no not at all. I even try to have a little drink before bed, and it doesn't help. \nDoctor: Do you have any oral symptoms, like vomiting or pain in your jaw? \nPatient: No, nothing like that.",
+    "note": "Symptoms: headaches for two months, pressure sensation behind eyes, moderately severe intensity, difficulty with regular activities, sinus congestion, light sensitivity\r\nDiagnosis: N/A\r\nHistory of Patient: gradual onset of headaches, worsened by stress, lack of sleep, and alcohol consumption, no vomiting or jaw pain\r\nPlan of Action: N/A\r\n",
+    "length": 1202
+  },
+  {
+    "pool_id": 27,
+    "source_id": 504,
+    "dialogue": "Doctor: How old are you now? \nPatient: I am sixty five. My kids just through me a surprise birthday party last week. \nDoctor: Oh wow! That is so nice. Happy belated birthday. \nPatient: It was nice. \nDoctor: It looks like you are here today for a recheck for the prostatitis. \nPatient: Yeah. \nDoctor: I see you have been followed by Doctor Mathis. \nPatient: Yes. \nDoctor: How often do you see him? \nPatient: He has me coming in about every three or four months. \nDoctor: Excellent. And the last time I saw you was in May two thousand and four. \nPatient: Has it been that long? \nDoctor: Yeah, it has. Okay. You are here to discuss some libido problems? \nPatient: Sadly, yes. \nDoctor: How long have you been having these difficulties? \nPatient: I noticed the change when I started taking the Proscar. \nDoctor: That is a common side effect that some men experience from Proscar. Have you tried any medication to help bring back your libido? \nPatient: I take Viagra sometimes. \nDoctor: Does it help at all? \nPatient: There is some improvement. \nDoctor: How many times a night do you get up to relive yourself now? \nPatient: I still get up about three to four times. \nDoctor: Okay, so still often. \nPatient: Yes, but I have not had any U T Is since I have been on the Proscar. \nDoctor: That is good news.",
+    "note": "Symptoms: N/A.\r\nDiagnosis: chronic prostatitis, decreased libido.\r\nHistory of Patient: follow-up with Dr. XYZ every three to four months, last appointment in May 2004, noticed libido change after starting Proscar, tried Viagra with some improvement, no urinary tract infections since starting Proscar, nocturia x 3 to 4.\r\nPlan of Action: N/A.",
+    "length": 1298
+  },
+  {
+    "pool_id": 28,
+    "source_id": 477,
+    "dialogue": "Doctor: Hello, what brings you here today? \nPatient: I fell four times on third of this month because my leg suddenly gave out. \nDoctor: How old are you? \nPatient: You don't ask age of a lady. She will never tell you the truth. \nDoctor: I know I'm in the wrong profession. I have to do that every time I meet someone. So how old are you?\nPatient: That's true. I'm just teasing you. I'm fifty one. \nDoctor: Are you right handed or left handed? \nPatient: I am right handed. \nDoctor: So, you said that your legs suddenly gave out. What happened exactly? Was it sudden? Or were you noticing some weakness before as well? \nPatient: Oh, I noticed weakness in my right leg before as well and sometimes, like, I have to give the support of my arm to actually move it. Sometimes during these episodes I just turn pale and it's like overall weakness. I feel so tired. My husband, he gives me some sugar, three teaspoons, and then it helps a little bit but not completely. \nDoctor: So, is your weakness like overall in your legs or it is at any single point? \nPatient: It's overall. I remember in one of these episodes I was, like, in an odd fisted posture. \nDoctor: Is there any change in your sensations? Like if I touch you, is it like same before or was there any change? \nPatient: No, nothing like that. \nDoctor: Is there change in vision? Are you seeing double? \nPatient: Nope. \nDoctor: Any difficulty in swallowing or eating? Any loss of consciousness?\nPatient: Nope. \nDoctor: Any difficulty in speech? Slurring, or anything like that? \nPatient: No. \nDoctor: You said that these episodes have been happening for some time, so did you see anyone for those before? \nPatient: Nope. It's just that I fall and then fell again last night. I was feeling so weak. Nothing was helping me. That's when, in the morning, my husband brought me to the U I H C hospital for the evaluation on the fifth.",
+    "note": "Symptoms: Weakness in right leg, overall weakness, feeling tired, falls (4 times), improvement with sugar intake, odd fisted posture during episodes, mild pallor during episodes.\r\nDiagnosis: N/A.\r\nHistory of Patient: 51-year-old female experienced weakness in her right leg, requiring arm support for movement, falls occurred on 1/3/93 and again on 1/4/93, brought to UIHC hospital for evaluation on 1/5/93.\r\nPlan Of Action: Patient presented to UIHC hospital for evaluation of weakness and falls.\r\n",
+    "length": 1883
+  },
+  {
+    "pool_id": 29,
+    "source_id": 881,
+    "dialogue": "Doctor: Hello today I have my assistant with me, and she will be representing your case. Tell me who do we have today? \nGuest_clinician: Patient has been cared by Doctor X since two thousand and two. She had a Codman Hakim shunt set at ninety M M H two O. She last came to our clinic in January two thousand and eight. At that time, she was recommended to follow up with Doctor Y for the medical management of her chronic headaches. She was also recommended to see a psychiatrist for her depression. \nDoctor: Did you go and see a psychiatrist? \nPatient: I did. It was okay.\nDoctor: What brings you here today? \nPatient: My headaches are back. They are very severe this time. It all happened that, after that scan. \nDoctor: When did she have her scan? \nGuest_clinician: She had her stunt adjusted which was after the M R I on April eighteenth. \nPatient: Yes, and after that I'm having these very bad headaches. \nDoctor: Are you able to sleep in the night properly? \nPatient: No, these headaches wake me up in the night. I haven't had a proper sleep in like ages. \nDoctor: Is there anything that elevates this pain? Or decreases it? \nPatient: Everything seems like increasing it. It just gets worse with coughing, straining, sneezing, even when I'm trying to stand. I tried all the medications, but nothing is helpful. There was Imitrex and I also tried Motrin eight hundred M G twice a day, but nothing seems to be like effective. Actually, it helps a bit when I lie down.\nDoctor: Is it like specific to any particular area of your head? \nPatient: It is like all over but, uh, very much intense in the forehead. \nDoctor: Is there any nausea associated with the headaches? \nPatient: No. \nDoctor: Anything else that happens along with these headaches? \nPatient: Yeah, I get that ringing sound in my ears, and I just don't feel well. \nDoctor: Any changes in your vision? \nPatient: Yeah, it gets blurry, and I feel like lights are dimming. I will be meeting Doctor Y tomorrow. \nDoctor: Any other thing you want to add? \nPatient: No, that's it.",
+    "note": "Symptoms: severe headaches, worsening with coughing, straining, sneezing, standing up, relieved when lying down, constant pain with intensity in forehead, ringing in ears, blurry vision, dimming lights\r\nDiagnosis: history of Codman-Hakim shunt set at 90 mmH2O, chronic headaches, depression\r\nHistory of Patient: acute onset of headaches after shunt adjustment following MRI on April 18th, 2008, poor sleep due to headaches, tried Imitrex and Motrin 800 mg twice a day without relief, scheduled follow",
+    "length": 2038
+  },
+  {
+    "pool_id": 30,
+    "source_id": 948,
+    "dialogue": "Doctor: Good afternoon, sir. \nPatient: Good afternoon, doctor. \nDoctor: You're forty four, correct? \nPatient: Yes sir. \nDoctor: Great, what seems to be the problem today, sir? \nPatient: Well, doctor, I've had lower back pain for a while now. \nDoctor: Does the pain go into your legs? \nPatient: Yeah, I have pain in my right thigh too. \nDoctor: Is there an injury associated with this pain? \nPatient: Yes, I had an incident back in nineteen ninety four. \nDoctor: Do you have any paperwork or medical records from the initial injury? \nPatient: No sir, I don't have those today. \nDoctor: What do you do for a living, sir? \nPatient: Right now, I work at Taco Bell. I have a workers comp claim open.\nDoctor: Your pain came back while working there, correct? \nPatient: Yes, that's correct. \nDoctor: Do you remember when your last appointment here was? \nPatient: Um, yes, it was on April twelfth two thousand five. \nDoctor: With ten being the worst pain imaginable, what was your pain out of ten at your last visit? \nPatient: Um, I'd say it was an eight out of ten. \nDoctor: Have you taken any medicine for this? \nPatient: Um, I had a Medrol Dosepak prescribed at my last visit. \nDoctor: How did your pain respond to the Dosepak? \nPatient: It took it down to about a four or five out of ten. \nDoctor: Can you point to me where the pain is, sir? \nPatient: Yes, it's right here. \nDoctor: This band right here? \nPatient: Yeah, that's the spot. \nDoctor: Okay, this is between your L four and sacrum. How would you describe your right leg pain?\nPatient: I'd say it's intermittent and minimal now, it's not always there. \nDoctor: Have you ever had back surgery? \nPatient: Um, yes, I've had two laminectomies, one in nineteen ninety and the other was in ninety four. Wait, I also had a discectomy some time in between. \nDoctor: Do you know where the focus was?\nPatient: It was at L four L 5. \nDoctor: Have you had any imaging done on the lower back? \nPatient: Yes, I had an M R I on October eighteenth two thousand four. I have the report right here. \nDoctor: Okay, this shows multi level degenerative changes, with facet involvement at L two L three, L three L four, and L five S1, with no neural impingement, which is good. \nPatient: What does that mean, doctor? \nDoctor: In summary, you have a significant amount of arthritis in the back. \nPatient: Oh yeah, I had an M R myelogram as well, here's the report. \nDoctor: Okay, this shows severe spinal stenosis at L three L four, but it may have been artifact. \nPatient: What does that mean? \nDoctor: This finding may be a misinterpretation.",
+    "note": "Symptoms: lower back pain, pain in right thigh, intermittent and minimal right leg pain\r\nDiagnosis: multi-level degenerative changes with facet involvement at L2-L3, L3-L4, and L5-S1, history of two laminectomies and a discectomy at L4-L5\r\nHistory of Patient: experienced pain recurrence while working at Taco Bell, previously treated with Medrol Dosepak, MRI on 10/18/04 showed no neural impingement but multi-level degenerative changes, MR myelogram showed severe stenosis at L3-L4 possibly artifac",
+    "length": 2577
+  }
+]
