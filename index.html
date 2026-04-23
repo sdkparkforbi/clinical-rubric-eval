@@ -892,6 +892,7 @@ function renderCurrentDialogue() {
   document.getElementById('btn-prev').disabled = (idx === 0);
   const nextBtn = document.getElementById('btn-next');
   nextBtn.textContent = (idx === 9) ? '저장하고 완료 ✓' : '저장하고 다음 →';
+  nextBtn.disabled = false;  // 이전 대화 저장 직후 남아있던 disabled 상태를 리셋
 }
 
 function selectScore(score) {
